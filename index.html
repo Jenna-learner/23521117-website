@@ -6,12 +6,69 @@
     <title>Thực hành nhập môn mạng máy tính</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-orange-100 flex justify-center items-center h-screen">
-    <div class="bg-white p-8 rounded-2xl shadow-lg text-center w-full max-w-md">
-        <img src="public\anh-dep-59.jpg" alt="phong canh" class="w-full h-64 object-cover rounded-xl shadow-md">
-        <h1 class="text-2xl font-bold text-orange-600 mt-4">MSSV: 23521117</h1>
-        <h2 class="text-xl text-gray-700 mt-2">Họ và tên: Trần Yến Nhi</h2>
-        <p class="mt-4 text-gray-600 text-lg">Chào mừng bạn đến với trang web về ảnh đẹp!</p>
-    </div>
+<body class="bg-orange-50 text-gray-900">
+    <!-- Header -->
+    <header class="bg-orange-500 bg-opacity-90 text-white fixed top-0 w-full shadow-md z-50">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <h1 class="text-xl font-bold">Ảnh Đẹp</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#gioi-thieu" class="hover:underline">Giới thiệu</a></li>
+                    <li><a href="#bo-suu-tap" class="hover:underline">Bộ sưu tập</a></li>
+                    <li><a href="#lien-he" class="hover:underline">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="h-screen flex flex-col justify-center items-center text-center px-4 mt-16">
+        <div class="bg-white p-8 rounded-2xl shadow-lg w-full max-w-md">
+            <img src="public/anh-dep-59.jpg" alt="phong canh" class="w-full h-64 object-cover rounded-xl shadow-md transform hover:scale-105 transition-transform duration-300">
+            <h1 class="text-2xl font-bold text-orange-600 mt-4">MSSV: 23521117</h1>
+            <h2 class="text-xl text-gray-700 mt-2">Họ và tên: Trần Yến Nhi</h2>
+            <p class="mt-4 text-gray-600 text-lg">Chào mừng bạn đến với trang web về ảnh đẹp!</p>
+        </div>
+    </section>
+
+    <!-- Giới thiệu -->
+    <section id="gioi-thieu" class="py-16 bg-white text-center">
+        <div class="container mx-auto max-w-2xl">
+            <h2 class="text-3xl font-bold text-orange-600">Giới thiệu</h2>
+            <p class="mt-4 text-gray-700">Trang web này là nơi chia sẻ những bức ảnh đẹp với thiên nhiên, con người và cuộc sống muôn màu.</p>
+        </div>
+    </section>
+
+    <!-- Bộ sưu tập ảnh -->
+    <section id="bo-suu-tap" class="py-16 bg-orange-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold text-orange-600">Bộ sưu tập</h2>
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <img src="public/anh1.jpg" class="w-full h-48 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300" alt="Ảnh 1">
+                <img src="public/anh2.jpg" class="w-full h-48 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300" alt="Ảnh 2">
+                <img src="public/anh3.jpg" class="w-full h-48 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300" alt="Ảnh 3">
+            </div>
+        </div>
+    </section>
+
+    <!-- Liên hệ -->
+    <section id="lien-he" class="py-16 bg-white text-center">
+        <div class="container mx-auto max-w-md">
+            <h2 class="text-3xl font-bold text-orange-600">Liên hệ</h2>
+            <p class="mt-4 text-gray-700">Nếu bạn muốn liên hệ với tôi, hãy điền thông tin bên dưới.</p>
+            <form class="mt-6 space-y-4">
+                <input type="text" placeholder="Họ và tên" class="w-full p-3 border rounded-lg">
+                <input type="email" placeholder="Email" class="w-full p-3 border rounded-lg">
+                <textarea placeholder="Tin nhắn" class="w-full p-3 border rounded-lg"></textarea>
+                <button type="submit" class="bg-orange-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-orange-600 transition">Gửi</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 bg-orange-500 text-white text-center mt-10">
+        <p>&copy; 2025 Ảnh Đẹp - Thiết kế bởi Trần Yến Nhi</p>
+    </footer>
 </body>
 </html>
+
