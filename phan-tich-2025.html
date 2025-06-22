@@ -1,4 +1,3 @@
-<!-- phan-tich-2025.html -->
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -17,9 +16,19 @@
     <main class="container mx-auto px-6 py-12 max-w-4xl">
         <h2 class="text-4xl font-bold text-orange-600 mb-6">Phân tích thị trường bất động sản năm 2025</h2>
         <img src="public/du-bao-thi-truong-bat-dong-san-2025.jpg" alt="Thị trường 2025" class="w-full rounded-xl shadow-md mb-6">
-        
-        <div class="text-lg text-gray-700 space-y-4">
-            <p>[Bạn có thể chèn nội dung phân tích tại đây]</p>
+
+        <div class="text-lg text-gray-700 space-y-6">
+            <p><strong>1. Tiền xử lý dữ liệu và phân tích khám phá:</strong> Dữ liệu đã được chuẩn hóa và làm sạch, loại bỏ tin trùng, xử lý ngoại lai bằng IQR, và chuyển đổi các thuộc tính có phân phối lệch phải sang dạng logarit để hỗ trợ mô hình hóa tốt hơn. Phân tích khám phá cho thấy dữ liệu bị thiếu nhiều ở các thuộc tính không phổ biến với một số loại hình bất động sản.</p>
+
+            <p><strong>2. Chia loại bất động sản:</strong> Dữ liệu được chia thành 3 nhóm: <em>căn hộ, nhà, và đất</em>. Việc này giúp mô hình học tốt hơn do đặc trưng từng nhóm khác nhau. Ví dụ: người mua nhà quan tâm chiều rộng mặt tiền, còn người mua căn hộ không.</p>
+
+            <p><strong>3. Mã hóa và chuẩn hóa:</strong> Các biến phân loại được mã hóa bằng One-hot hoặc Ordinal tùy theo đặc tính. Biến số được chuẩn hóa bằng StandardScaler hoặc MinMaxScaler. Tập dữ liệu được chia theo tỷ lệ 70/15/15 cho train/validation/test.</p>
+
+            <p><strong>4. Kết quả mô hình:</strong> Linear Regression hoạt động tốt với nhà và căn hộ nhưng yếu với đất. Random Forest cho kết quả tốt hơn rõ rệt trên cả ba loại với <em>R<sup>2</sup></em> đều trên 0.92. Tuy nhiên, cần cảnh giác với overfitting do độ chính xác cao bất thường.</p>
+
+            <p><strong>5. Các vấn đề và hướng phát triển:</strong> Dữ liệu mất cân bằng giữa các thành phố (TP.HCM chiếm hơn 50%). Sự chênh lệch giá giữa các bất động sản có đặc điểm giống nhau cho thấy dữ liệu chịu ảnh hưởng cảm tính mạnh. Cần tích hợp thêm dữ liệu văn bản mô tả, hình ảnh, và giao dịch thực tế để tăng tính chính xác. Đồng thời, mô hình có thể mở rộng với XGBoost, LSTM hoặc theo từng quận để phản ánh rõ giá thị trường địa phương.</p>
+
+            <p><strong>Kết luận:</strong> Mô hình đã phản ánh tốt đặc điểm từng loại bất động sản với pipeline đầy đủ từ tiền xử lý đến huấn luyện. Random Forest là mô hình phù hợp hiện tại nhưng vẫn cần tiếp tục cải tiến về dữ liệu và kiểm định tổng quát trên tập test độc lập.</p>
         </div>
     </main>
 
